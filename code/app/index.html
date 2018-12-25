@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasking</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <div id="banner">
+      <h1>Tasking</h1>
+      <h2>distribute tasks</h2>
+  </div>
+  
+  <div>
+        <div id="transaction">
+                <h3>You have <span class="black"><span id="balance"></span> points</span></h3>
+                <br><label for="amount">Amount:</label><input type="text" id="amount" placeholder="e.g. 95"></input>
+                <br><label for="receiver">To Name:</label><input type="text" id="receiver" placeholder="e.g. song"></input>
+                <br><label for="task">Task:</label><input type="text" id="task" placeholder="e.g. UI"></input>
+                <br><br>
+                <button id="send" onclick="App.distributeTask()">Send Task</button>
+                <button id="delete" onclick="App.deleteTask()">delete Task</button>
+                <br><br>
+                <span id="status"></span>
+                <br>
+          </div>
+          <div id="memberlist">
+              <button id="addmem">add</button>
+                <dl style="margin-top: 50px">
+                    <dt class="name" id="firstname">first</dt>
+                    <dd>taskpoint:<span class="taskpoint" id="first"></span><hr></dd>
+                    <dt class="name" id="secondname">second</dt>
+                    <dd>taskpoint:<span class="taskpoint" id="second"></span><hr></dd>
+                    <dt class="name" id="thirdname">third</dt>
+                    <dd>taskpoint:<span class="taskpoint" id="third"></span><hr></dd>
+                    <dt class="name" id="forthname">forth</dt>
+                    <dd>taskpoint:<span class="taskpoint" id="forth"></span><hr></dd>
+                </dl>
+                <div id="setname">
+                  <label class="lable1" for="address">Name seq: </label><input type="text" id="setaddress"></input>
+                  <label class="lable1" for="setname">  Name  : </label><input type="text" id="set_name"></input>
+                  <button id="set" onclick="App.setName()">setname</button>
+                </div>
+          </div>
+  </div>
+  <div id="tasklist">
+      <span class="taskstate">To do: </span><span class="taskstate" id="total_point">0</span><span class="taskstate"> points</span>
+      <table id="tasktable">
+          <thread>
+            <tr><th class="td">Sequence</th><th class="td">Member</th><th class="td2">Task</th><th class="td">Point</th></tr>    
+          </thread>
+          <tbody></tbody>
+
+        </table>
+  </div>
+</body>
+</html>

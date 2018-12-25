@@ -1,0 +1,148 @@
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: "Open Sans", sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+input {
+  width: 80%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+h2 {
+  display: inline-block;
+  float: right;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  padding:0px;
+  margin:5px
+}
+
+h3 {
+  font-weight: normal;
+  color: black;
+  font-size: 24px;
+}
+
+.taskstate {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+#banner {
+  background-color: cornflowerblue;
+  height: 5%;
+  position: relative;
+}
+
+#transaction {
+    margin-top: 10px;
+    height: 500px;
+    width: 50%;
+    position: relative;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: rgb(206, 211, 241) 4px 4px 10px 5px;
+}
+
+
+#memberlist {
+  margin-top: 10px;
+  height: 500px;
+  width:33%;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  float: right;
+  border-radius: 15px;
+  border: 3px solid rgb(206, 211, 241);
+}
+
+#tasklist {
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 97%;
+    position: relative;
+    float: left;
+    box-shadow: rgb(206, 211, 241) 4px 4px 10px 5px;
+}
+
+#tasktable {
+  margin-top: 30px;
+  border: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+table tr:nth-child(odd){
+  background: rgb(171, 189, 247);
+}
+
+.black {
+  color: black;
+}
+
+#balance {
+  color: black;
+}
+
+.hint {
+  color: #666;
+}
+.td {
+  width: 15%;
+}
+.td2 {
+  width: 55%;
+}
+button {
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: rgb(171, 189, 247);
+  border-radius: 10px;
+  padding: 5px;
+}
+#addmem {
+  float: right;
+}
+#set_name, #setaddress {
+  width: fit-content;
+  padding: 0px;
+  font-size: 8px;
+  margin-right: 20px;
+}
+
+
+.lable1 {
+  width: auto;
+  margin-right: 10px;
+}
+
